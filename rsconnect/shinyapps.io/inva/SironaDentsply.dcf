@@ -1,0 +1,12 @@
+name: SironaDentsply
+title: SironaDentsply
+username: inva
+account: inva
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14099333
+bundleId: 9856137
+url: https://inva.shinyapps.io/SironaDentsply/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
