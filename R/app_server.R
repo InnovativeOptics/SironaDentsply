@@ -107,7 +107,7 @@ app_server <- function(input, output, session) {
   })
 
   output$contact_info <- renderUI({
-    if(input$lmfg == "Andau"){
+    if(input$lmfg == "Andau" || input$lmfg == "Admetec"){
       h1(strong("To place an order, please, call Andau Customer Service 1-844andau88"))
     } else{
       h1(strong("Please call Innovative Optics at 763-425-7789 with any questions"))    }
@@ -232,7 +232,7 @@ app_server <- function(input, output, session) {
       )
     ))
 
-    if(input$lmfg == "Andau"){
+    if(input$lmfg == "Andau" || input$lmfg == "Admetec"){
       html_code <- map(html_code,
                        ~ gsub('<div class="col-sm-5" id="left-section">', '<div class="col-sm-5" id="left-section" style="visibility:hidden">', .x) %>%
                          HTML())
